@@ -8,7 +8,7 @@ import WorkExperience from "./WorkExperience.js";
 import AboutMe from "./AboutMe.js";
 import ScrollButton from "../../helpers/ScrollToTop.js";
 import { useEffect } from "react";
-import Stack_v2 from "./Stack_v2.js";
+import StackV2 from "./StackV2.js";
 
 const About = () => {
 
@@ -19,7 +19,7 @@ const About = () => {
   return (
     <article className="about-main">
       <AboutMe />
-      <Stack_v2 />
+      <StackV2 />
       {/*<DownloadResume />*/}
       <WorkExperience />
       <Education />

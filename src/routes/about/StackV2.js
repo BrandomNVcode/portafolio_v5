@@ -1,7 +1,7 @@
 import React from 'react'
 import { Nivel } from './Nivel'
 
-const Stack_v2 = () => {
+const StackV2 = () => {
     return (
         <>
             <div className="education">
@@ -30,4 +30,4 @@ const Stack_v2 = () => {
     )
 }
 
-export default Stack_v2
+export default StackV2
