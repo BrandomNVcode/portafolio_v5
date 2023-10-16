@@ -5,7 +5,7 @@ import postresApp from '../assets/images/portfolio/postres-app.png';
 import coffe from '../assets/images/portfolio/coffee.png';
 
 
-const projectsDataOLD = [
+/*const projectsDataOLD = [
   {
     id: "rest-countries",
     img: 'RestCountries',
@@ -16,7 +16,7 @@ const projectsDataOLD = [
     description:
       "REST Countries is a project made with API which also has a color theme switcher feature. You can view the list of all countries and find a specific one via search or by filtering regions. By navigating to the individual country page, you are able to see more details about the country like native name and even border countries.",
   }
-];
+];*/
 
 const projectsData = [
   {
