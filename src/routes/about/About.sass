@@ -1,0 +1,198 @@
+@use  "../../core-ui/_base"
+//ABOUT
+
+.about, .about-main
+    padding: 1.5rem
+    display: flex
+    flex-direction: column
+    gap: 2rem
+    .download-btn
+        display: flex
+        flex-direction: row
+        align-items: center
+        justify-content: center
+        gap: 1rem
+        cursor: pointer
+        background-color: transparent
+        border-width: 1px
+        border-color: base.$pinkish
+        border-style: solid
+        letter-spacing: 1px
+        padding: 1rem 0.5rem
+        letter-spacing: 1px
+        width: 14rem
+        max-width: 70%
+        font-family: base.$body-font
+        color: base.$pinkish
+        opacity: 0.9
+        background: linear-gradient(to right, base.$white 50%, transparent 50%)
+        background-size: 200% 100%
+        background-position: right bottom
+        transition: all 0.4s ease
+        img
+            width: 1.5rem
+            height: 1.5rem
+
+    h2
+        font-size: 2.5rem
+        letter-spacing: 1px
+    p
+        font-size: 1.5rem
+    @media (min-width: base.$sm-width)
+
+        h2
+            font-size: 4rem
+    @media (min-width: base.$lg-width)
+        display: grid
+        grid-template-columns: repeat(2, 1fr)
+        p
+            margin-top: 2rem
+.about
+    display: grid
+    grid-template-columns: 1fr
+
+.about-main
+    display: flex
+    flex-direction: column
+    padding: 2rem
+    grid-column: span 3
+
+//STACK SECTION
+.stack-section
+    display: grid
+    grid-template-columns: repeat(2, 1fr)
+    column-gap: 2rem
+    row-gap: 1rem
+    margin-top: 5%
+    padding: 2rem
+
+    li
+        display: list-item
+        color: base.$white
+        font-family: base.$body-font
+        line-height: 1.5rem
+        text-align: left
+        font-weight: 100
+        font-size: 1.2rem
+    li::marker
+        content: counter(li) " > "
+        color: base.$pinkish
+        animation: color 0.3s ease-in-out infinite
+
+.stack-section
+    img
+        width: 3rem
+        max-width: 100%
+        cursor: pointer
+        transition: all 0.4s ease
+    @media (min-width: base.$sm-width)
+        gap: 1.5rem
+//WORK EXPERIENCE
+.work-experience, .education, .languages, .certification
+    margin-top: 5%
+    display: grid
+    grid-template-columns: 1fr
+    color: base.$white
+    gap: 2rem
+    .section-2
+        display: flex
+        flex-direction: row
+        gap: 0.5rem
+    h3
+        font-family: base.$body-font
+        font-size: 1.5rem
+    p
+        font-size: 1rem
+    .responsibilities, .education, .languages, .certification
+        font-size: 1rem
+        padding: 1rem
+
+        li
+            font-family: base.$body-font
+            line-height: 1.5rem
+            text-align: left
+            font-weight: 100
+        li::marker
+            content: counter(list-item) " › "
+            color: base.$pinkish
+            animation: color 0.3s ease-in-out infinite
+    a
+        color: base.$pinkish
+        font-family: base.$body-font
+
+
+// NIVEL
+.content-conocimientos 
+    width: 100%
+
+
+.item-conocimientos 
+    margin-top: 1rem
+    display: flex
+    justify-content: center
+    align-items: center
+    flex-direction: row
+
+
+.item-text 
+    width: 50%
+    height: 34px
+    color: #171321
+    font-family: 'Roboto' 'Times New Roman', Times, serif
+    font-weight: bold
+    font-size: 1rem
+    letter-spacing: 2px
+    text-align: center
+    padding: 7px 15px
+    border: 1px solid #20247b
+
+
+.item-habilidad 
+    background: #FFB300
+    border-start-start-radius: 8px
+    border-end-start-radius: 8px
+
+
+.item-desc 
+    display: none
+    color: #fff
+    font-size: 0.85rem
+    font-weight: 400
+
+
+.item-nivel 
+    background-color: #33CC66
+    border-top-right-radius: 8px
+    border-bottom-right-radius: 8px
+
+
+.bg-nivel-avanzado 
+    background: rgb(38,38,38)
+    background: linear-gradient(0deg, rgba(38, 38, 38, 0.5) 0%, rgb(159 152 40) 50%, rgb(38, 38, 38) 100%)
+
+
+.bg-nivel-medio 
+    background: rgb(38,38,38)
+    background: linear-gradient(0deg, rgba(38, 38, 38, 0.5) 0%, rgb(102 148 130) 50%, rgb(38, 38, 38) 100%)
+
+.bg-nivel-basico 
+    background: rgb(38,38,38)
+    background: linear-gradient(0deg, rgba(38, 38, 38, 0.5) 0%, rgb(126 106 125) 50%, rgb(38, 38, 38) 100%)
+
+
+
+
+
+@media (min-width: 768px) 
+
+    .flex-center-center 
+        display: flex
+        justify-content: center
+        align-items: center
+
+    .item-desc 
+        width: 100%
+        max-width: 420px
+    
+    
+
